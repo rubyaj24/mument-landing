@@ -1,5 +1,6 @@
 import React from 'react'
 // import Image from 'next/image'
+import TrueFocus from './TrueFocus';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -38,18 +39,25 @@ const TestimonialsSection = () => {
       {/* Background Elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-4">
             💬 Testimonials
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <TrueFocus
+            sentence="Loved by Students of CET"
+            manualMode={true}
+            blurAmount={1}
+            borderColor="blue"
+            animationDuration={1}
+            pauseBetweenAnimations={1}
+        />
+          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Loved by
             <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"> Students </span>
             of CET
-          </h2>
+          </h2> */}
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             See what our community of µlearners are saying about their experience with µment.
           </p>
